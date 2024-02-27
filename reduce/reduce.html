@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <h1>Reduce</h1>
+    
+    <h2>O método <strong>reduce()</strong> em JavaScript é uma das bases da programação funcional na linguagem. Vamos explorar como ele funciona:</h2>
+
+    
+    <p>
+    O método reduce() executa uma função redutora para cada elemento em um array.
+    Ele retorna um valor único, que é o resultado acumulado de aplicar a função redutora a cada elemento.
+    </p>
+    <p id="importante">
+    Importante, reduce() não executa a função para elementos vazios do array, e não modifica o array original.
+    </p>
+
+    <h2>Exemplo:</h2>
+
+    <p>Neste exemplo, o reduce recebe dois argumentos: uma função e um valor inicial. A função é chamada para cada elemento do array, e recebe dois parâmetros: o total acumulado e o valor atual. A função retorna o novo total, que é passado para a próxima iteração. O valor inicial é o valor inicial do total, que é 0 neste caso. Se você não fornecer um valor inicial, o reduce usará o primeiro elemento do array como o valor inicial.</p>
+
+    <pre>
+        const numeros = [10, 20, 30, 40];
+        const soma = numeros.reduce((total, num) => total + num, 0);
+    </pre>
+    
+    <button onclick="teste()">RODAR CÓDIGO</button>
+    
+    <p id="exemplo">A soma dos números é: -</p>
+
+
+
+    <script src="./js/reduce.js"></script>
+</body>
+</html>
