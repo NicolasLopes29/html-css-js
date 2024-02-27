@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <h1>Filter</h1>
+    
+    <h2>O método filter() em JavaScript é uma ferramenta poderosa para manipular arrays. Vamos explorar como ele funciona:</h2>
+
+    
+    <p>
+    O método filter() cria um novo array com todos os elementos que passaram no teste implementado pela função de callback. Ele itera sobre cada elemento do array e passa cada elemento para a função de retorno callback.
+    Se a função callback retornar true, o elemento é incluído no novo array de retorno.
+    </p>
+
+    <h2>Exemplo:</h2>
+
+    <p>Suponha que você tenha um array de idades e queira filtrar apenas os adultos. Você pode fazer isso com o método filter().</p>
+
+    <pre>
+        const idades = [22, 16, 52, 40, 12, 23];
+        const resultado = idades.filter(checkAdulto);
+        
+        function checkAdulto(idade) {
+          return idade >= 18;
+        }
+    </pre>
+    
+    <button onclick="teste()">RODAR CÓDIGO</button>
+    <p id="exemplo">Números filtrados: -</p>
+
+
+
+    <script src="./js/filter.js"></script>
+</body>
+</html>
